@@ -15,7 +15,11 @@ export default function Navbar({ activePage, setActivePage }) {
 	return (
 		<nav className="navbar bg-light sticky-top">
 			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
+				<a
+					onClick={() => setActivePage("About")}
+					className="navbar-brand"
+					href="#about"
+				>
 					Jeremy Stevens
 				</a>
 				<button
@@ -99,6 +103,11 @@ export default function Navbar({ activePage, setActivePage }) {
 											Photography
 										</a>
 									</li>
+									<li>
+										<a className="dropdown-item" href="#interests/photography">
+											Exercise
+										</a>
+									</li>
 								</ul>
 							</li>
 						</ul>
@@ -107,69 +116,4 @@ export default function Navbar({ activePage, setActivePage }) {
 			</div>
 		</nav>
 	);
-}
-
-{
-	/* <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
-					Jeremy Stevens
-				</a>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNavDarkDropdown"
-					aria-controls="navbarNavDarkDropdown"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
-					<ul className="navbar-nav">
-						<li className="nav-item dropdown">
-							<a className="nav-link">About Me</a>
-						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link">Projects</a>
-						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link">Resume</a>
-						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link">Contact</a>
-						</li>
-						<li className="nav-item dropdown">
-							<a
-								className="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Interests
-							</a>
-							<ul className="dropdown-menu dropdown-menu-dark">
-								<li>
-									<a className="dropdown-item" href="#">
-										Action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Another action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Something else here
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav> */
 }

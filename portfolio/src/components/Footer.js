@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="container fixed-bottom p-4">
+		<div className="container p-4">
 			<div className="d-flex justify-content-around button-group">
 				<button id="github" type="button" className="btn">
 					<a href="https://github.com/jeremystevens515">
