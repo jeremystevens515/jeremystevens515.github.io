@@ -1,15 +1,22 @@
 import React, { useState, useEffect } from "react";
-import About from "./main/About";
-import Projects from "./main/Projects";
-import Resume from "./main/Resume";
-import Interest from "./main/Interests";
 
-export default function Main() {
-	const [active, setActive] = useState("about");
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Interests from "./pages/Interests";
 
-	return (
-		<div>
-			<p>Content about me</p>
-		</div>
-	);
+export default function Main({ activePage }) {
+	const renderPage = () => {
+		if (activePage === "About") {
+			return <About />;
+		} else if (activePage === "Projects") {
+			return <Projects />;
+		} else if (activePage === "Resume") {
+			return <Resume />;
+		} else {
+			return <Interests />;
+		}
+	};
+
+	return renderPage();
 }

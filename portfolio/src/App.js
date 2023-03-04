@@ -3,22 +3,12 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Container from "./components/Container";
 
-function App() {
-	// set state variable to About by default
-	// this variable will be used to determine which page will render in <Main/>
-	const [active, setActive] = useState("About");
-
+export default function App() {
 	return (
 		<div>
-			<Navbar active={active} setActive={setActive} />
-			<Main />
-			<Footer />
+			<Container />
 		</div>
 	);
 }
-
-export default App;
