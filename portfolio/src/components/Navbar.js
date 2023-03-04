@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
 	return (
 		<nav className="navbar bg-light sticky-top">
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#">
-					Offcanvas navbar
+					Jeremy Stevens
 				</a>
 				<button
 					className="navbar-toggler"
@@ -24,7 +24,7 @@ export default function Navbar() {
 				>
 					<div className="offcanvas-header">
 						<h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-							Offcanvas
+							Portfolio
 						</h5>
 						<button
 							type="button"
@@ -37,12 +37,17 @@ export default function Navbar() {
 						<ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
 							<li className="nav-item">
 								<a className="nav-link active" aria-current="page" href="#">
-									Home
+									About
 								</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">
-									Link
+									Projects
+								</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									Resume
 								</a>
 							</li>
 							<li className="nav-item dropdown">
@@ -53,22 +58,22 @@ export default function Navbar() {
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									Dropdown
+									Interests
 								</a>
 								<ul className="dropdown-menu">
 									<li>
 										<a className="dropdown-item" href="#">
-											Action
+											PC Hardware
 										</a>
 									</li>
 									<li>
 										<a className="dropdown-item" href="#">
-											Another action
+											Video Games
 										</a>
 									</li>
 									<li>
 										<a className="dropdown-item" href="#">
-											Something else here
+											Photography
 										</a>
 									</li>
 								</ul>
