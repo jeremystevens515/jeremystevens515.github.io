@@ -13,7 +13,7 @@ export default function Container() {
 	const [activePage, setActivePage] = useState("About");
 
 	return (
-		<div>
+		<div className="container">
 			<Navbar activePage={activePage} setActivePage={setActivePage} />
 			<Main activePage={activePage} />
 			<Footer />
