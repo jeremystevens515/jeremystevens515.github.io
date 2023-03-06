@@ -79,36 +79,12 @@ export default function Navbar({ activePage, setActivePage }) {
 							</li>
 							<li className="nav-item dropdown">
 								<a
-									className="nav-link dropdown-toggle"
+									onClick={pageChange}
+									className="navLink nav-link"
 									href="#Interests"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
 								>
 									Interests
 								</a>
-								<ul className="dropdown-menu">
-									<li>
-										<a className="dropdown-item" href="#interests/pc-hardware">
-											PC Hardware
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="#interests/video-games">
-											Video Games
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="#interests/photography">
-											Photography
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="#interests/photography">
-											Exercise
-										</a>
-									</li>
-								</ul>
 							</li>
 						</ul>
 					</div>

@@ -15,7 +15,7 @@ export default function Container() {
 	return (
 		<div className="container">
 			<Navbar activePage={activePage} setActivePage={setActivePage} />
-			<Main activePage={activePage} />
+			<Main activePage={activePage} setActivePage={setActivePage} />
 			<Footer />
 		</div>
 	);
