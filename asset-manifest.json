@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.96051289.css",
+    "main.js": "/portfolio/static/js/main.5cdb4b59.js",
+    "static/media/barcode.jpg": "/portfolio/static/media/barcode.500bc115fa9c604206ef.jpg",
+    "static/media/about-photo.jpg": "/portfolio/static/media/about-photo.bfb7b96687d40c715d1f.jpg",
+    "static/media/stevens_software_dev_resume.pdf": "/portfolio/static/media/stevens_software_dev_resume.48df6ef2c70aa5561a6c.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.96051289.css.map": "/portfolio/static/css/main.96051289.css.map",
+    "main.5cdb4b59.js.map": "/portfolio/static/js/main.5cdb4b59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96051289.css",
+    "static/js/main.5cdb4b59.js"
+  ]
+}
