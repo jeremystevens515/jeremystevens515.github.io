@@ -3,8 +3,8 @@ import "./portfolio.css";
 
 export default function Footer() {
 	return (
-		<div className="container p-4">
-			<div className="d-flex justify-content-around button-group">
+		<div className="">
+			<div className="d-flex justify-content-around button-group p-2">
 				<button id="github" type="button" className="btn">
 					<a href="https://github.com/jeremystevens515">
 						<svg
@@ -45,7 +45,7 @@ export default function Footer() {
 					</a>
 				</button>
 			</div>
-			<div id="credits" className="text-center p-5">
+			<div id="credits" className="text-center">
 				Icons by FontAwesome
 			</div>
 		</div>

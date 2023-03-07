@@ -7,7 +7,7 @@ import Container from "./components/Container";
 
 export default function App() {
 	return (
-		<div>
+		<div className="container">
 			<Container />
 		</div>
 	);

@@ -5,7 +5,7 @@ import "../portfolio.css";
 export default function About({ setActivePage }) {
 	return (
 		<div>
-			<div className="card">
+			<div className="card shadow">
 				<div className="row">
 					<div className="col-md-4">
 						<img
@@ -16,26 +16,31 @@ export default function About({ setActivePage }) {
 					</div>
 					<div className="col-md-8">
 						<div className="card-body p-4">
-							<h2 className="card-title fs-4">about</h2>
-							<p className="card-text">
-								Software engineer based out of Nashville, Tennessee. Naturally
-								curious, self-starting, tech enthusiast who is focused on
-								writing clean, reusable code and creating things that people
-								will benefit from and enjoy.
-							</p>
-							<a
-								onClick={() => setActivePage("Resume")}
-								href="#resume"
-								className="btn btn-dark "
-							>
-								resume
-							</a>
+							<div>
+								<h2 className="card-title fs-4">about</h2>
+								<p className="card-text">
+									Software engineer based out of Nashville, Tennessee. Naturally
+									curious, self-starting, tech enthusiast who is focused on
+									writing clean, reusable code and creating things that people
+									will benefit from and enjoy.
+								</p>
+							</div>
+							<div className="text-md-end">
+								<a
+									onClick={() => setActivePage("Resume")}
+									href="#resume"
+									className="btn shadow"
+									id="resume-btn"
+								>
+									resume
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div className="card my-4">
+			<div className="card my-4 shadow">
 				<div className="card-body p-4">
 					<h2 className="fs-4">technologies</h2>
 					<div className="d-flex flex-wrap justify-content-between p-4">
@@ -131,7 +136,7 @@ export default function About({ setActivePage }) {
 				</div>
 			</div>
 
-			<div className="card my-4">
+			<div className="card my-4 shadow">
 				<div className="card-body p-4">
 					<h2 className="fs-4">future learning</h2>
 					<div className="d-flex justify-content-around p-4">

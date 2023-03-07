@@ -13,17 +13,20 @@ export default function Navbar({ activePage, setActivePage }) {
 	};
 
 	return (
-		<nav className="navbar bg-light sticky-top">
+		<nav
+			id="navbar"
+			className="navbar sticky-top rounded-bottom mb-3 shadow-sm"
+		>
 			<div className="container-fluid">
 				<a
 					onClick={() => setActivePage("About")}
-					className="navbar-brand"
+					className="navbar-brand fs-1"
 					href="#about"
 				>
 					Jeremy Stevens
 				</a>
 				<button
-					className="navbar-toggler"
+					className="navbar-toggler shadow-sm"
 					type="button"
 					data-bs-toggle="offcanvas"
 					data-bs-target="#offcanvasNavbar"
