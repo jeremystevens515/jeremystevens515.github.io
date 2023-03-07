@@ -1,0 +1,33 @@
+svg {
+	fill: #a8cad7;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+#resume-btn {
+	background: #a8cad7;
+}
+
+#credits {
+	font-size: x-small;
+}
+
+#barcode {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+#resume {
+	object-fit: fill;
+}
+
+#navbar {
+	background-color: #dff3e5;
+}
+
+#ue5 {
+	color: #a8cad7;
+}
