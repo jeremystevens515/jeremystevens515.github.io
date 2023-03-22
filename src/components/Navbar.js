@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar({ activePage, setActivePage }) {
 	const pageChange = (event, page) => {
@@ -38,23 +39,25 @@ export default function Navbar({ activePage, setActivePage }) {
 							className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 						>
 							<li>
-								<a>Home</a>
+								<Link to="/">Home</Link>
 							</li>
 							<li>
-								<a>Software</a>
+								<Link to="/software">Software</Link>
 							</li>
 							<li>
-								<a>Games</a>
+								<Link to="/games">Games</Link>
 							</li>
 							<li>
-								<a>3D Art</a>
+								<Link to="/3dart">3D Art</Link>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div className="flex-1">
-				<a className="btn btn-ghost normal-case text-xl">jeremy stevens</a>
+				<Link to="/" className="btn btn-ghost normal-case text-xl">
+					jeremy stevens
+				</Link>
 			</div>
 			<div className="flex-none">
 				<div className="dropdown dropdown-end">

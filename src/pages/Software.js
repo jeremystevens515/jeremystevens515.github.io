@@ -1,7 +1,7 @@
 import React from "react";
 import barcode from "../images/barcode.jpg";
 
-export default function Projects() {
+export default function Software() {
 	return (
 		<div>
 			<a

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./index.css";
 
@@ -7,13 +8,13 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 
 export default function App() {
-	const [activePage, setActivePage] = useState("About");
-
 	return (
 		<div>
-			<Navbar activePage={activePage} setActivePage={setActivePage} />
-			<Body activePage={activePage} setActivePage={setActivePage} />
-			<Footer />
+			<Router>
+				<Navbar />
+				<Body />
+				<Footer />
+			</Router>
 		</div>
 	);
 }
