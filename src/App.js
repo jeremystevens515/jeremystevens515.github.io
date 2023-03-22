@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./index.css";
 
-import Container from "./components/Container";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
 
 export default function App() {
+	const [activePage, setActivePage] = useState("About");
+
 	return (
-		<div className="container">
-			<Container />
+		<div>
+			<Navbar activePage={activePage} setActivePage={setActivePage} />
+			<Body activePage={activePage} setActivePage={setActivePage} />
+			<Footer />
 		</div>
 	);
 }

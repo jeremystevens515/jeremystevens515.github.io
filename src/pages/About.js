@@ -1,6 +1,5 @@
 import React from "react";
-import photo from "../../images/about-photo.jpg";
-import "../portfolio.css";
+import photo from "../images/about-photo.jpg";
 
 export default function About({ setActivePage }) {
 	return (
@@ -24,16 +23,6 @@ export default function About({ setActivePage }) {
 									writing clean, reusable code and creating things that people
 									will benefit from and enjoy.
 								</p>
-							</div>
-							<div className="text-md-end">
-								<a
-									onClick={() => setActivePage("Resume")}
-									href="#resume"
-									className="btn shadow"
-									id="resume-btn"
-								>
-									resume
-								</a>
 							</div>
 						</div>
 					</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import barcode from "../../images/barcode.jpg";
+import barcode from "../images/barcode.jpg";
 
 export default function Projects() {
 	return (
@@ -47,6 +47,28 @@ export default function Projects() {
 							<p className="card-text">
 								Back end application using Express.js, MySQL, and Sequelize.
 								RESTful API routes written using Sequelize.
+							</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a
+				href="https://github.com/jeremystevens515/nosql-social-network-api"
+				className="card shadow"
+			>
+				<div className="row">
+					<img
+						id="barcode"
+						className="col-md-4"
+						src={barcode}
+						alt="kitchen inventory"
+					></img>
+					<div className="col-md-8">
+						<div className="card-body">
+							<h5 className="card-title">NoSQL Social Network API</h5>
+							<p className="card-text">
+								Back end application for a social media platform using
+								Express.js, MongoDB, and Mongoose ODM.
 							</p>
 						</div>
 					</div>

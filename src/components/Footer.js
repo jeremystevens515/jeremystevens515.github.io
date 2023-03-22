@@ -1,5 +1,4 @@
 import React from "react";
-import "./portfolio.css";
 
 export default function Footer() {
 	return (
@@ -46,7 +45,7 @@ export default function Footer() {
 				</button>
 			</div>
 			<div id="credits" className="text-center">
-				Icons by FontAwesome
+				Built using React
 			</div>
 		</div>
 	);
