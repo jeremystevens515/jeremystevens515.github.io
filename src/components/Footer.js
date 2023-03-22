@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="">
-			<div className="d-flex justify-content-around button-group p-2">
-				<button id="github" type="button" className="btn">
+		<div className="p-4">
+			<div className="flex justify-around">
+				<button id="github" type="button" className="btn btn-ghost">
 					<a href="https://github.com/jeremystevens515">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export default function Footer() {
 						</svg>
 					</a>
 				</button>
-				<button id="linkedIn" type="button" className="btn">
+				<button id="linkedIn" type="button" className="btn btn-ghost">
 					<a href="https://www.linkedin.com/in/jeremytstevensdev/">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function Footer() {
 						</svg>
 					</a>
 				</button>
-				<button id="email" type="button" className="btn">
+				<button id="email" type="button" className="btn btn-ghost">
 					<a href="#">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Footer() {
 					</a>
 				</button>
 			</div>
-			<div id="credits" className="text-center">
+			<div id="credits" className="text-xs text-center">
 				Built using React
 			</div>
 		</div>
