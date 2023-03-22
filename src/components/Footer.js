@@ -30,22 +30,39 @@ export default function Footer() {
 						</svg>
 					</a>
 				</button>
-				<button id="email" type="button" className="btn btn-ghost">
-					<a href="#">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="20"
-							height="20"
-							fill="#000000"
-							viewBox="0 0 512 512"
-						>
-							<path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-						</svg>
-					</a>
-				</button>
+				<label
+					htmlFor="my-modal"
+					id="email"
+					type="button"
+					className="btn btn-ghost"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="#000000"
+						viewBox="0 0 512 512"
+					>
+						<path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+					</svg>
+				</label>
+				<input type="checkbox" id="my-modal" className="modal-toggle" />
+				<div className="modal">
+					<div className="modal-box">
+						<h3 className="font-bold text-lg">
+							I look forward to hearing from you!
+						</h3>
+						<p className="py-4">jeremytstevensdev@gmail.com</p>
+						<div className="modal-action">
+							<label htmlFor="my-modal" className="btn">
+								close
+							</label>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="credits" className="text-xs text-center">
-				Built using React
+				Built with React
 			</div>
 		</div>
 	);

@@ -10,4 +10,5 @@ svg {
 .techIcon:hover {
 	fill: hsl(var(--p));
 	color: hsl(var(--p));
+	filter: brightness(1.1);
 }

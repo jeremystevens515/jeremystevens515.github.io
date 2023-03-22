@@ -12,6 +12,7 @@ export default function TechnologiesCard() {
 					{techIcons.map((item) => {
 						return (
 							<Icon
+								key={item.id}
 								technology={item.technology}
 								viewBox={item.svgViewBox}
 								path={item.svgPath}
