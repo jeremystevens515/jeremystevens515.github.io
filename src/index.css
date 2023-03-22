@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+svg {
+	fill: hsl(var(--bc));
+}
+
+.techIcon:hover svg,
+.techIcon:hover {
+	fill: hsl(var(--p));
+	color: hsl(var(--p));
+}
