@@ -2,7 +2,13 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="p-4">
+		<div className="grid grid-row-3 p-4">
+			<ul className="steps">
+				<li className="step step-primary">meet me</li>
+				<li className="step">see my stuff</li>
+				<li className="step">take a chance</li>
+				<li className="step">offer the job</li>
+			</ul>
 			<div className="flex justify-around">
 				<button id="github" type="button" className="btn btn-ghost">
 					<a href="https://github.com/jeremystevens515">

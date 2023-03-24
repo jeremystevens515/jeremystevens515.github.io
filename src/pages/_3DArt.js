@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function _3DArt() {
-	return <div>Add 3D art here when it is ready</div>;
+	return (
+		<div className="p-4">
+			<p>Add 3D art here when it is ready</p>
+		</div>
+	);
 }

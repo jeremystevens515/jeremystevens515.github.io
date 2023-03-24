@@ -11,8 +11,8 @@ export default function Body() {
 		<Routes>
 			<Route path="/" element={<About />} />
 			<Route path="/software" element={<Projects />} />
-			<Route path="/games" element={<Games />} />
-			<Route path="/3dart" element={<_3DArt />} />
+			{/* <Route path="/games" element={<Games />} />
+			<Route path="/3dart" element={<_3DArt />} /> */}
 		</Routes>
 	);
 }

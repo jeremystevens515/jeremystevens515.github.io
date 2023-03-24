@@ -2,12 +2,10 @@ import React from "react";
 
 export default function Games() {
 	return (
-		<div>
+		<div className="p-4">
 			<p>
-				As a future development, I would like to make this page full of things
-				that I enjoy so that people can get to know me better. I will include
-				topics such as PC hardware, video games, photography, and weight
-				lifting, just to name a few!
+				One of my goals is to get into game development. Here I will display
+				projects that I create to that end.
 			</p>
 		</div>
 	);

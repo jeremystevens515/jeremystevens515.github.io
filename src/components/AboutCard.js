@@ -3,8 +3,8 @@ import photo from "../images/about-photo.jpg";
 
 export default function AboutCard() {
 	return (
-		<div>
-			<div className="card lg:card-side card-normal bg-base-100 shadow-xl">
+		<div className="row-span-3 col-span-1">
+			<div className="card card-normal bg-base-100 shadow-xl h-full">
 				<figure>
 					<img
 						src={photo}

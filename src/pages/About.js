@@ -6,12 +6,10 @@ import FutureLearningCard from "../components/LearningCard";
 
 export default function About({ setActivePage }) {
 	return (
-		<div>
+		<div className="grid grid-cols-1 lg:grid-rows-3 lg:grid-cols-2 gap-4">
 			<AboutCard />
-			<div className="flex-block lg:flex">
-				<TechnologiesCard />
-				<FutureLearningCard />
-			</div>
+			<TechnologiesCard />
+			<FutureLearningCard />
 		</div>
 	);
 }
