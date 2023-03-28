@@ -1,10 +1,11 @@
 import React from "react";
-import barcode from "../images/barcode.jpg";
 import lunchroom from "../images/lunchroom-inventory.jpg";
+import ecommerce from "../images/ecommerce.jpg";
+import socialMedia from "../images/social-media.jpg";
 
 export default function Software() {
 	return (
-		<div className="grid md:grid-cols-2 xl:grid-cols-3 justify-items-center">
+		<div className="grid md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4 bg-neutral">
 			<div className="card w-96 bg-base-100 shadow-xl">
 				<figure>
 					<img src={lunchroom} alt="barcode" />
@@ -29,7 +30,7 @@ export default function Software() {
 			</div>
 			<div className="card w-96 bg-base-100 shadow-xl">
 				<figure>
-					<img src={barcode} alt="barcode" />
+					<img src={ecommerce} alt="barcode" />
 				</figure>
 				<div className="card-body">
 					<h2 className="card-title">eCommerce Backend</h2>
@@ -50,7 +51,7 @@ export default function Software() {
 			</div>
 			<div className="card w-96 bg-base-100 shadow-xl">
 				<figure>
-					<img src={barcode} alt="barcode" />
+					<img src={socialMedia} alt="barcode" />
 				</figure>
 				<div className="card-body">
 					<h2 className="card-title">noSQL Social Network API</h2>

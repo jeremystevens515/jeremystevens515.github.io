@@ -9,8 +9,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 export default function Body() {
 	return (
 		<Routes>
-			<Route path="/" element={<About />} />
-			<Route path="/software" element={<Projects />} />
+			<Route path="/portfolio/" element={<About />} />
+			<Route path="/portfolio/software" element={<Projects />} />
 			{/* <Route path="/games" element={<Games />} />
 			<Route path="/3dart" element={<_3DArt />} /> */}
 		</Routes>

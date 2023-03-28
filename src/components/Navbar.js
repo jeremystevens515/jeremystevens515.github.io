@@ -2,26 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ activePage, setActivePage }) {
-	const pageChange = (event, page) => {
-		const navLinks = document.querySelectorAll(".navLink");
-		navLinks.forEach((link) => {
-			if (link.classList.contains("active")) {
-				link.classList.remove("active");
-			}
-		});
-		event.target.classList.add("active");
-		setActivePage(event.target.text);
-	};
-
 	return (
-		<div className="navbar bg-base-100">
+		<div className="navbar bg-neutral">
 			<div className="flex-none">
 				<div className="dropdown dropdown-start">
-					<label tabIndex={0} className="btn btn-ghost rounded-btn">
+					<label tabIndex={0} className="btn btn-primary rounded-btn">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
 							viewBox="0 0 24 24"
+							fill="none"
 							className="inline-block w-5 h-5 stroke-current"
 						>
 							<path
@@ -37,24 +26,29 @@ export default function Navbar({ activePage, setActivePage }) {
 						className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4"
 					>
 						<li>
-							<a>Resume</a>
+							<a href="https://docs.google.com/document/d/e/2PACX-1vRuZ9Svi-ebDJYxzul5JX8GcHPLA23UXiEkOTqBIRhIFBjaIxvXHD4YbK_7xId-TPXzy8gNmRFWr3aK/pub">
+								Resume
+							</a>
 						</li>
-						<li>
+						{/* <li>
 							<a>Contact</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 			</div>
 
 			<div className="flex-1">
-				<Link to="/" className="btn btn-ghost normal-case text-xl">
+				<Link
+					to="/portfolio/"
+					className="btn btn-ghost normal-case text-xl text-primary"
+				>
 					jeremy stevens
 				</Link>
 			</div>
 
 			<div className="flex-none">
 				<div className="dropdown dropdown-end">
-					<label tabIndex={0} className="btn btn-ghost btn-square">
+					<label tabIndex={0} className="btn btn-primary btn-square">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							className="h-5 w-5"
@@ -75,10 +69,10 @@ export default function Navbar({ activePage, setActivePage }) {
 						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 					>
 						<li>
-							<Link to="/">Home</Link>
+							<Link to="/portfolio/">Home</Link>
 						</li>
 						<li>
-							<Link to="/software">Software</Link>
+							<Link to="/portfolio/software">Projects</Link>
 						</li>
 						{/* <li>
 							<Link to="/games">Games</Link>

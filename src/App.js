@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { GlobalProvider } from "./utils/context";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./index.css";
@@ -9,12 +10,14 @@ import Footer from "./components/Footer";
 
 export default function App() {
 	return (
-		<div>
+		<GlobalProvider>
 			<Router>
-				<Navbar />
-				<Body />
-				<Footer />
+				<div className="h-screen">
+					<Navbar />
+					<Body />
+					<Footer />
+				</div>
 			</Router>
-		</div>
+		</GlobalProvider>
 	);
 }
