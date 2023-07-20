@@ -5,7 +5,7 @@ import { techIcons } from "../helper/lists";
 
 export default function TechnologiesCard() {
 	return (
-		<div className="lg:h-2/3">
+		<div className="lg:h-full">
 			<div className="card card-normal bg-base-100 shadow-xl h-full">
 				<div className="card-body">
 					<h2 className="card-title">technologies</h2>

@@ -26,7 +26,7 @@ export default function Navbar({ activePage, setActivePage }) {
 						className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4"
 					>
 						<li>
-							<a href="https://docs.google.com/document/d/e/2PACX-1vRuZ9Svi-ebDJYxzul5JX8GcHPLA23UXiEkOTqBIRhIFBjaIxvXHD4YbK_7xId-TPXzy8gNmRFWr3aK/pub">
+							<a href="https://docs.google.com/document/d/e/2PACX-1vQXbCjZP_X-YQivt2fHjTLRRBuJFYqwgroKOFU1-Hsuj1xkLH9jefHf27XirW1b_A/pub">
 								Resume
 							</a>
 						</li>
@@ -39,7 +39,7 @@ export default function Navbar({ activePage, setActivePage }) {
 
 			<div className="flex-1">
 				<Link
-					to="/portfolio/"
+					to="/"
 					className="btn btn-ghost normal-case text-xl text-primary"
 				>
 					jeremy stevens
@@ -69,10 +69,10 @@ export default function Navbar({ activePage, setActivePage }) {
 						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 					>
 						<li>
-							<Link to="/portfolio/">Home</Link>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link to="/portfolio/software">Projects</Link>
+							<Link to="/software">Projects</Link>
 						</li>
 						{/* <li>
 							<Link to="/games">Games</Link>

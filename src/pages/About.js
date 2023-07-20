@@ -12,7 +12,7 @@ export default function About({ setActivePage }) {
 			</div>
 			<div className="lg:w-1/2">
 				<TechnologiesCard />
-				<FutureLearningCard />
+				{/* <FutureLearningCard /> */}
 			</div>
 		</div>
 	);

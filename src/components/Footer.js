@@ -9,20 +9,6 @@ export default function Footer() {
 	}
 	return (
 		<div className="grid grid-row-3 p-4 bg-neutral">
-			<ul className="steps text-primary">
-				<li id="step1" className="step step-primary">
-					meet me
-				</li>
-				<li id="step2" className="step step-primary">
-					see my work
-				</li>
-				<li id="step3" className="step step-primary">
-					take a chance
-				</li>
-				<li id="step4" className="step">
-					offer the job
-				</li>
-			</ul>
 			<div className="flex justify-around">
 				<a
 					id="github"
