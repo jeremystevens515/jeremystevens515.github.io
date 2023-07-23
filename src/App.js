@@ -12,7 +12,7 @@ export default function App() {
 	return (
 		<GlobalProvider>
 			<Router>
-				<div className="h-screen">
+				<div>
 					<Navbar />
 					<Body />
 					<Footer />

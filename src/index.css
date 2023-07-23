@@ -12,3 +12,30 @@ svg {
 	color: hsl(var(--p));
 	filter: brightness(1.1);
 }
+
+body {
+	background: linear-gradient(rgb(35,35,35), rgb(75,75,75));
+}
+
+section {
+	display: grid;
+	place-items: center;
+	align-content: center;
+	min-height: 100vh;
+}
+
+section:nth-child(2) {
+	transition-delay: 250ms;
+}
+
+.hide {
+	filter: blur(10px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+
+.show {
+	filter: blur(0px);
+	transform: translateX(0%);
+	transition: all 1s;
+}
