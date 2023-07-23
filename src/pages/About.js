@@ -33,8 +33,8 @@ export default function About() {
 				<p className="text-4xl text-white">I love to learn</p>
 				<p className="text-4xl text-white">and understand how everything works</p>
 				<div>
-					<button className="btn">More about me</button>
-					<button className="btn">Projects</button>
+					<button className="btn btn-ghost">&lt; More about me</button>
+					<button className="btn btn-ghost">Projects &gt;</button>
 				</div>
 			</section>
 

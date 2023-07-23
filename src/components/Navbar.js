@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ activePage, setActivePage }) {
 	return (
-		<div className="navbar">
+		<div className="navbar flex justify-between">
 			<div className="flex-none">
 				<div className="dropdown dropdown-start">
 					<label tabIndex={0} className="btn btn-ghost rounded-btn">
@@ -30,21 +30,18 @@ export default function Navbar({ activePage, setActivePage }) {
 								Resume
 							</a>
 						</li>
-						{/* <li>
-							<a>Contact</a>
-						</li> */}
 					</ul>
 				</div>
 			</div>
 
-			<div className="flex-1">
+			{/* <div className="flex-1">
 				<Link
 					to="/"
 					className="btn btn-ghost normal-case text-xl text-white"
 				>
 					jeremy stevens
 				</Link>
-			</div>
+			</div> */}
 
 			<div className="flex-none">
 				<div className="dropdown dropdown-end">
