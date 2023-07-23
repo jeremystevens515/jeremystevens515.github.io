@@ -13,7 +13,7 @@ export default function Footer() {
 				<a
 					id="github"
 					title="github"
-					className="btn btn-primary"
+					className="btn btn-ghost"
 					href="https://github.com/jeremystevens515"
 				>
 					<svg
@@ -30,7 +30,7 @@ export default function Footer() {
 				<a
 					id="linkedIn"
 					title="linkedIn"
-					className="btn btn-primary"
+					className="btn btn-ghost"
 					href="https://www.linkedin.com/in/jeremytstevensdev/"
 				>
 					<svg
@@ -48,7 +48,7 @@ export default function Footer() {
 					htmlFor="my-modal"
 					id="email"
 					type="button"
-					className="btn btn-primary"
+					className="btn btn-ghost"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -62,13 +62,13 @@ export default function Footer() {
 				</label>
 				<input type="checkbox" id="my-modal" className="modal-toggle" />
 				<div className="modal">
-					<div className="modal-box">
+					<div className="modal-box bg-secondary">
 						<h3 className="font-bold text-lg">
 							I look forward to hearing from you!
 						</h3>
 						<p className="py-4">jeremytstevensdev@gmail.com</p>
 						<div className="modal-action">
-							<label htmlFor="my-modal" className="btn">
+							<label htmlFor="my-modal" className="btn btn-ghost">
 								close
 							</label>
 						</div>

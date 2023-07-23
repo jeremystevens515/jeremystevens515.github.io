@@ -8,8 +8,9 @@ export default function About() {
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				entry.target.classList.remove("hide");
 				entry.target.classList.add("show");
+			} else {
+				entry.target.classList.remove("show");
 			}
 		});
 	});

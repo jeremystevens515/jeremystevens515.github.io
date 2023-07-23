@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 svg {
-	fill: hsl(var(--bc));
+	fill: white;
 }
 
 .techIcon:hover svg,
@@ -22,10 +22,6 @@ section {
 	place-items: center;
 	align-content: center;
 	min-height: 100vh;
-}
-
-section:nth-child(2) {
-	transition-delay: 250ms;
 }
 
 .hide {
