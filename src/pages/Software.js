@@ -5,20 +5,17 @@ import socialMedia from "../images/social-media.jpg";
 
 export default function Software() {
 	return (
-		<div className="grid md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4 bg-neutral">
-			<div className="card w-96 bg-base-100 shadow-xl">
+		<div className="grid grid-cols-3 gap-4 justify-center items-center">
+			<div className="card bg-primary shadow-xl">
 				<figure>
-					<img src={lunchroom} alt="barcode" />
+					<img className="project-img bg-center bg-cover" src={lunchroom} alt="barcode" />
 				</figure>
-				<div className="card-body">
-					<h2 className="card-title">Kitchen Inventory</h2>
-					<p>
-						Inventory management system developed to aid a local elementary
-						school transition from paper inventory to electronic, which utilizes
-						the user’s phone as a barcode scanner and stores data using MongoDB
-						and GraphQL.
+				<div className="card-body text-center">
+					<h2 className="text-secondary text-2xl font-medium">MERN Stack</h2>
+					<p className="text-info">
+						Inventory management system utilizing the entire MERN stack of technologies- MongoDB, Express, React, & Node.
 					</p>
-					<div className="card-actions justify-end">
+					<div>
 						<a
 							href="https://github.com/jeremystevens515/lunchroom-inventory-app"
 							className="btn btn-primary"
@@ -28,20 +25,22 @@ export default function Software() {
 					</div>
 				</div>
 			</div>
-			<div className="card w-96 bg-base-100 shadow-xl">
+
+			<div className="card bg-primary shadow-xl">
 				<figure>
-					<img src={ecommerce} alt="barcode" />
+					<img className="project-img" src={ecommerce} alt="barcode" />
 				</figure>
-				<div className="card-body">
-					<h2 className="card-title">eCommerce Backend</h2>
-					<p>
-						eCommerce backend application using Express.js, MySQL, and
-						Sequelize. RESTful API routes are used to make GET, POST, PUT, and
-						DELETE requests.
+				<div className="card-body text-center">
+					<h2 className="text-secondary text-2xl font-medium">eCommerce Website</h2>
+					<p className="text-info">
+						eCommerce site built with MongoDB, Express, React, & Node.
 					</p>
-					<div className="card-actions justify-end">
+					<p>
+						Coming soon.
+					</p>
+					<div>
 						<a
-							href="https://github.com/jeremystevens515/eCommerce-backend"
+							href="https://github.com/jeremystevens515/"
 							className="btn btn-primary"
 						>
 							GitHub Repository
@@ -49,19 +48,20 @@ export default function Software() {
 					</div>
 				</div>
 			</div>
-			<div className="card w-96 bg-base-100 shadow-xl">
+
+			<div className="card bg-primary shadow-xl">
 				<figure>
-					<img src={socialMedia} alt="barcode" />
+					<img className="project-img" src={socialMedia} alt="barcode" />
 				</figure>
-				<div className="card-body">
-					<h2 className="card-title">noSQL Social Network API</h2>
-					<p>
-						Simple social media network API built with Mongo DB and the Mongoose
-						ODM.
+				<div className="card-body text-center">
+					<h2 className="text-secondary text-2xl font-medium">Social Media Clone</h2>
+					<p className="text-info">
+						Social media clone built with .NET.
 					</p>
-					<div className="card-actions justify-end">
+					<p> Coming soon.</p>
+					<div>
 						<a
-							href="https://github.com/jeremystevens515/nosql-social-network-api"
+							href="https://github.com/jeremystevens515/"
 							className="btn btn-primary"
 						>
 							GitHub Repository

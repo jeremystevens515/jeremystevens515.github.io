@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-svg {
-	fill: white;
-}
-
-.techIcon:hover svg,
-.techIcon:hover {
-	fill: hsl(var(--p));
-	color: hsl(var(--p));
-	filter: brightness(1.1);
-}
-
 body {
 	background: linear-gradient(rgb(35,35,35), rgb(75,75,75));
 }
 
+svg {
+	fill: white;
+}
+
+/* Homepage */
+#container {
+	overflow: hidden;
+}
 section {
 	display: grid;
 	place-items: center;
 	align-content: center;
 	min-height: 100vh;
+	gap: 1rem;
 }
 
 .hide {
@@ -43,4 +41,37 @@ section {
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent
+}
+
+.button-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	gap: 1rem;
+	width: 200vw;
+	transform: translateX(-23%);
+}
+.projects {
+	display: flex;
+	gap: 1rem;
+	animation: rightIn 2s 1 forwards;
+}
+
+.project {
+	border: 0.05rem white solid;
+	border-radius: 0.25rem;
+	width: 5rem;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project:nth-child(2) {
+	transition-delay: 250ms;
+}
+
+.project:nth-child(3) {
+	transition-delay: 500ms;
 }
