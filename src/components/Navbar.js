@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ activePage, setActivePage }) {
 	return (
-		<div className="navbar bg-neutral">
+		<div className="navbar flex justify-between border-b-2 border-secondary">
 			<div className="flex-none">
 				<div className="dropdown dropdown-start">
-					<label tabIndex={0} className="btn btn-primary rounded-btn">
+					<label tabIndex={0} className="btn btn-ghost rounded-btn">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
@@ -23,16 +23,13 @@ export default function Navbar({ activePage, setActivePage }) {
 					</label>
 					<ul
 						tabIndex={0}
-						className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+						className="menu dropdown-content p-2 shadow bg-secondary rounded-box w-52 mt-4"
 					>
 						<li>
 							<a href="https://docs.google.com/document/d/e/2PACX-1vQXbCjZP_X-YQivt2fHjTLRRBuJFYqwgroKOFU1-Hsuj1xkLH9jefHf27XirW1b_A/pub">
 								Resume
 							</a>
 						</li>
-						{/* <li>
-							<a>Contact</a>
-						</li> */}
 					</ul>
 				</div>
 			</div>
@@ -40,15 +37,15 @@ export default function Navbar({ activePage, setActivePage }) {
 			<div className="flex-1">
 				<Link
 					to="/"
-					className="btn btn-ghost normal-case text-xl text-primary"
+					className="btn btn-ghost normal-case text-xl text-white"
 				>
-					jeremy stevens
+					js
 				</Link>
 			</div>
 
 			<div className="flex-none">
 				<div className="dropdown dropdown-end">
-					<label tabIndex={0} className="btn btn-primary btn-square">
+					<label tabIndex={0} className="btn btn-ghost btn-square">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							className="h-5 w-5"
@@ -66,20 +63,17 @@ export default function Navbar({ activePage, setActivePage }) {
 					</label>
 					<ul
 						tabIndex={0}
-						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-secondary rounded-box w-52"
 					>
 						<li>
 							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link to="/software">Projects</Link>
-						</li>
-						{/* <li>
-							<Link to="/games">Games</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li>
-							<Link to="/3dart">3D Art</Link>
-						</li> */}
+							<Link to="/software">Projects</Link>
+						</li>
 					</ul>
 				</div>
 			</div>
