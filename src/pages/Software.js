@@ -15,7 +15,22 @@ export default function Software() {
 	}, []);
 
 	if (loaded) {
-		anime({
+		// anime({
+		// 	targets: ".project",
+		// 	duration: 1250,
+		// 	translateX: [-1000, 0],
+		// 	filter: ["blur(10px)", "blur(0px)"],
+		// 	opacity: [0, 1],
+		// 	delay: anime.stagger(100, { easing: "easeOutSine" }),
+		// 	loop: false,
+		// })
+
+		anime.timeline({
+			//timeline
+		}).add({
+			targets: ".project",
+			delay: 1000,
+		}).add({
 			targets: ".project",
 			duration: 1250,
 			translateX: [-1000, 0],
@@ -27,26 +42,37 @@ export default function Software() {
 	}
 
 	return (
-		<div className="software">
+		<div className="software my-6">
 			<h2 className="text-6xl">Projects</h2>
 			<div className="">
-				<div className="projects">
-					<div className="project">
-						<a href="https://jeremystevens515.github.io/ssi">React.js</a>
-					</div>
-					<div className="project">
-						<a href="https://github.com/jeremystevens515/lunchroom-inventory-app">MERN</a>
-					</div>
-					<div className="project">
-						<a href="https://github.com/jeremystevens515/" >MERN</a>
-					</div>
-					<div className="project">
-						<a href="https://github.com/jeremystevens515/" >.NET</a>
-					</div>
+				<div className="projects text-white font-medium">
+					<a className="project" href="https://jeremystevens515.github.io/ssi">
+						<div className="text-lg">React.js</div>
+						<div className="text-xs">Business Landing Page</div>
+					</a>
+
+					<a className="project" href="https://github.com/jeremystevens515/lunchroom-inventory-app" >
+						<div className="text-lg">MERN</div>
+						<div className="text-xs">Inventory Management</div>
+					</a>
+
+					<a className="project" href="https://github.com/jeremystevens515/" >
+						<div className="text-lg">MERN</div>
+						<div className="text-xs">Ecommerce</div>
+						<div className="text-xs">&#40;in progress&#41;</div>
+
+					</a>
+
+					<a className="project" href="https://github.com/jeremystevens515/" >
+						<div className="text-lg">.NET</div>
+						<div className="text-xs">Social Media</div>
+						<div className="text-xs">&#40;in progress&#41;</div>
+					</a>
+
 				</div>
-			</div>
+			</div >
 
 			<Link to="/" className="btn btn-ghost">Back &lt;</Link>
-		</div>
+		</div >
 	);
 }

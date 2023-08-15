@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ activePage, setActivePage }) {
 	return (
-		<div className="navbar flex justify-between">
+		<div className="navbar flex justify-between border-b-2 border-secondary">
 			<div className="flex-none">
 				<div className="dropdown dropdown-start">
 					<label tabIndex={0} className="btn btn-ghost rounded-btn">
@@ -34,14 +34,14 @@ export default function Navbar({ activePage, setActivePage }) {
 				</div>
 			</div>
 
-			{/* <div className="flex-1">
+			<div className="flex-1">
 				<Link
 					to="/"
 					className="btn btn-ghost normal-case text-xl text-white"
 				>
-					jeremy stevens
+					js
 				</Link>
-			</div> */}
+			</div>
 
 			<div className="flex-none">
 				<div className="dropdown dropdown-end">
@@ -69,14 +69,11 @@ export default function Navbar({ activePage, setActivePage }) {
 							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link to="/software">Projects</Link>
-						</li>
-						{/* <li>
-							<Link to="/games">Games</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li>
-							<Link to="/3dart">3D Art</Link>
-						</li> */}
+							<Link to="/software">Projects</Link>
+						</li>
 					</ul>
 				</div>
 			</div>

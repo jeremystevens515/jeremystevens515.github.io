@@ -1,78 +1,23 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import anime from "animejs";
-import { Link } from "react-router-dom";
-
-// import AboutCard from "../components/AboutCard";
-// import TechnologiesCard from "../components/TechnologiesCard";
-// import FutureLearningCard from "../components/LearningCard";
-
+import { Link } from "react-router-dom"
+import photo from "../images/about-photo.jpg"
 export default function About() {
-	const [loaded, setLoaded] = useState(false);
-	useEffect(() => {
-		setLoaded(true);
-	}, []);
+    return (
+        <div className="flex flex-col justify-center items-center">
+            <div className="about">
+                <img className="about-photo" src={photo} alt="Jeremy Stevens" />
 
-	if (loaded) {
-		// animate welcome and color mask for name upon page loading
-		const timeline = anime.timeline({
-			easing: "easeInOutQuad",
-		});
+                <section className="software-section software-section-1">
+                    <p className="text-2xl text-center w-3/4 p-5">I am a software programmer based out of Nashville, TN with a passion for learning and creating. I love video games, hiking, mountain biking, reading books, and taking photos of the natural world.</p>
+                    <p className="text-2xl text-center w-3/4 p-5">I've been married since 2019 to my beautiful wife, Emery, and I have two golden retrievers, Twizzle and Kylo.</p>
+                </section>
 
-		timeline
-			.add({
-				targets: ".welcome-section",
-				translateY: [-500, 0],
-				filter: ["blur(10px)", "blur(0px)"],
-			})
-			.add({
-				targets: "#name",
-				backgroundPosition: "100% 0%",
-				delay: 250,
-				duration: 1000,
+                <section className="software-section software-section-2">
+                    <p className="text-2xl text-center w-3/4 p-5">My professional background as a Registered Nurse in the Intensive Care Unit gives me a unique perspective and has given me many skills that are transferrable to technology-realted fields.</p>
+                    <p className="text-2xl text-center w-3/4 p-5">I learn quickly, work well in teams, communicate effectively, and am always looking for new challenges and opportunities to grow.</p>
+                </section>
+            </div>
+            <Link to="/" className="btn btn-ghost">Back &gt;</Link>
+        </div>
 
-			});
-
-		//animate mid section elements when they intersect with the viewport
-		let Observer = new IntersectionObserver((entries) => { //callback function to execute when the element intersects with the viewport
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) { //if the element is intersecting with the viewport
-					entry.target.classList.add("show");
-					// entry.target.classList.remove("hide");
-				}
-			});
-		}, { threshold: 0.5 });
-
-		let elements = document.querySelectorAll(".hide");
-		elements.forEach((element) => {
-			Observer.observe(element);
-		});
-
-
-	}
-	return (
-		<div id="container">
-
-			< section className="welcome-section" >
-				<p className="text-4xl text-white tracking-wide p-4">Welcome.</p>
-				<p className="text-6xl text-white tracking-wide">I'm <span id="name">Jeremy</span></p>
-			</section >
-
-			<section className="hide mid-section">
-				<p className="text-4xl text-white">I'm a software developer</p>
-				<p className="text-4xl text-white">certified in full-stack web development</p>
-				<p className="text-4xl text-white">and C++</p>
-			</section>
-
-			<section className="hide button-section">
-				<p className="text-4xl text-white text-center">I love to learn</p>
-				<p className="text-4xl text-white text-center">and understand how everything works</p>
-				<div className="p-4 text-center">
-					<Link className="btn btn-ghost">&lt; More about me</Link>
-					<Link to="/software" className="btn btn-ghost">Projects &gt;</Link>
-				</div>
-			</section>
-		</div >
-
-	);
+    )
 }
